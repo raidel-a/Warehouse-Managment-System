@@ -1,0 +1,51 @@
+ArrayList<Item> itemsList = new ArrayList<>(items);
+
+        System.out.println("Item count:       " + itemsList.size());
+        ArrayList<Item> classA = new ArrayList<Item>();
+        ArrayList<Item> classB = new ArrayList<Item>();
+        ArrayList<Item> classC = new ArrayList<Item>();
+        ArrayList<Item> classD = new ArrayList<Item>();
+        ArrayList<Item> classE = new ArrayList<Item>();
+        ArrayList<Item> classF = new ArrayList<Item>();
+        ArrayList<Item> classG = new ArrayList<Item>();
+        ArrayList<Item> classH = new ArrayList<Item>();
+
+
+
+for (int i=0; i < itemsList.size(); i++){
+            Item item = itemsList.get(i);
+            String thisItem = item.getId();
+            char classType = thisItem.charAt(5);
+            if (classType == 'A'){
+                classA.add(item);
+            }
+            else if (classType == 'B'){
+                classB.add(item);
+            }
+            else if (classType == 'C'){
+                classC.add(item);
+            }
+            else if (classType == 'D'){
+                classD.add(item);
+            }
+            else if (classType == 'E'){
+                classE.add(item);
+            }
+            else if (classType == 'F'){
+                classF.add(item);
+            }
+            else if (classType == 'G'){
+                classG.add(item);
+            }
+            else if (classType == 'H'){
+                classH.add(item);
+            }
+        }
+
+
+System.out.println("      classification A count:" + classA.size());
+
+
+for (int j =0; j< classA.size(); j++){
+            System.out.println("\t\t\t" + classA.get(j).getId());
+        }
